@@ -62,7 +62,7 @@ import { API_KEY } from "../constants/apiKey";
 
 export const fetchWeather = async (lat, lon) => {
   
-    const url = `http://api.weatherstack.com/current?access_key=${API_KEY}&query=${lat},${lon}&units=m`;
+    const url = `https://api.weatherstack.com/current?access_key=${API_KEY}&query=${lat},${lon}&units=m`;
   
     try {
       const response = await fetch(url);
